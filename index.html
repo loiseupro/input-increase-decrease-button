@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Input button</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#product_quantity").adaInputBtn();
+			$("#product_quantity2").adaInputBtn();
+		});
+	</script>
+</head>
+<body>
+	<form>
+		<label>Insert quantity</label>
+		<input type="text" id="product_quantity" value="2" name="product_quantity" data-min="2" data-max="10" data-step="2" />
+		<hr/>
+		<input type="text" id="product_quantity2" value="1" name="product_quantity" data-min="0" data-max="10" data-step="1" />
+	</form>
+</body>
+</html>
